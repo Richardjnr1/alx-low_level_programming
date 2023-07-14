@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main -program that prints aline with printf function
  * Return: 0 (success)
