@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	char c;
+	int c;
 
 	int d;
 
 	c = 'a';
-	d = c;
+	d = 'c';
 	while
 		(d < 10) {
 			putchar(d + '0');
