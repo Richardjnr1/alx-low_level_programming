@@ -1,14 +1,13 @@
-
-#include 'main.h'
+#include "main.h"
 /**
- * main -Entry point
+ * main -A function that prints putchar without standard library header file
  * Return: 0 (Success)
  */
 int main(void)
 {
 	_putchar('_');
 	_putchar('p');
-	_putchat('u');
+	_putchar('u');
 	_putchar('t');
 	_putchar('c');
 	_putchar('h');
@@ -17,3 +16,4 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+
