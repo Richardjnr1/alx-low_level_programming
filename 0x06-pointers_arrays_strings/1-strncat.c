@@ -3,19 +3,20 @@
  * _strncat -A function that concatenates two strings
  * @dest : string 1
  * @src : string 2
- * @n : memory in byte
+ * @n : number in bytes
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int len = strlen(dest);
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-	while (i < n)
+	int j;
+
+	for (j = 0; j < n && *src != '\0'; j++)
 	{
-		dest[i] = '\0';
-		i++;
+		dest[len + j] = *src;
+		src++;
 	}
+	dest[len + j] = '\0';
 	return (dest);
 }
