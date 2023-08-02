@@ -3,16 +3,16 @@
  * _strchr -A function that locates a character in a string
  * @s: string
  * @c: character to be located
- * Return: c or NULL
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int i = 0;
+
+	for (; s[i] >= '\0'; i++)
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		if (s[i] == c)
+			return (&s[i]);
 	}
-	if (*s == c)
-		return (NULL);
+	return (0);
 }
